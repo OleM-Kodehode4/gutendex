@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 function Autocomplete({ searchText, setSearchText, setSearchResults }) {
   const [error, setError] = useState(null)
-
+  
   useEffect(() => {
     const delayDebounceFn = setTimeout(() => {
       if (searchText.length >= 3) {
